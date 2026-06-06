@@ -1,5 +1,9 @@
 <script>
 	import logo from '$lib/assets/logo.png';
+	import Wrench from 'lucide-svelte/icons/wrench';
+	import CircleGauge from 'lucide-svelte/icons/gauge';
+	import Disc3 from 'lucide-svelte/icons/disc-3';
+	import Car from 'lucide-svelte/icons/car';
 </script>
 
 <svelte:head>
@@ -19,19 +23,41 @@
 		Professional Tire & Wheel Services in Muscat, Oman
 	</p>
 
-	<a class="cta" href="/contact">
-		Contact Us
-	</a>
+	<div class="actions">
+		<a class="call-btn" href="tel:+96872095000">
+			Call Now
+		</a>
+
+		<a class="contact-btn" href="/contact">
+			Contact Us
+		</a>
+	</div>
+
 </section>
 
 <section class="services">
 	<h2>Our Services</h2>
 
 	<div class="service-list">
-		<div class="card">Tire Replacement</div>
-		<div class="card">Wheel Balancing</div>
-		<div class="card">Rim Services</div>
-		<div class="card">Vehicle Accessories</div>
+		<div class="card">
+			<Wrench size={36} />
+			<h3>Tire Replacement</h3>
+		</div>
+
+		<div class="card">
+			<CircleGauge size={36} />
+			<h3>Wheel Balancing</h3>
+		</div>
+
+		<div class="card">
+			<Disc3 size={36} />
+			<h3>Rim Services</h3>
+		</div>
+
+		<div class="card">
+			<Car size={36} />
+			<h3>Vehicle Accessories</h3>
+		</div>
 	</div>
 </section>
 
@@ -91,14 +117,49 @@
 
 	.card {
 		border: 1px solid #ddd;
-		border-radius: 10px;
-		padding: 1rem;
+		border-radius: 12px;
+		padding: 1.5rem;
 		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0.75rem;
+		transition: 0.2s ease;
+	}
+
+	.card:hover {
+		transform: translateY(-3px);
 	}
 
 	.business-info {
 		margin-top: 3rem;
 		padding-top: 2rem;
 		border-top: 1px solid #ddd;
+	}
+
+	.actions {
+		display: flex;
+		justify-content: center;
+		gap: 1rem;
+		margin-top: 1.5rem;
+		flex-wrap: wrap;
+	}
+
+	.call-btn,
+	.contact-btn {
+		padding: 0.9rem 1.5rem;
+		border-radius: 10px;
+		text-decoration: none;
+		font-weight: 600;
+	}
+
+	.call-btn {
+		background: #111;
+		color: white;
+	}
+
+	.contact-btn {
+		border: 1px solid #ccc;
+		color: inherit;
 	}
 </style>
