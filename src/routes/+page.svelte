@@ -24,7 +24,7 @@
 	</p>
 
 	<div class="actions">
-		<a class="call-btn" href="tel:+96872095000">
+		<a class="call-btn" href="tel:+96872006001">
 			Call Now
 		</a>
 
@@ -64,7 +64,7 @@
 <section class="business-info">
 	<h2>Business Information</h2>
 
-	<p><strong>Phone:</strong> +968 7209 5000</p>
+	<p><strong>Phone:</strong> +968 7200 6001</p>
 
 	<p><strong>Email:</strong> alarabiyatire@gmail.com</p>
 
