@@ -32,34 +32,15 @@
 	/>
 </svelte:head>
 
-<section
-    class="hero"
-    style={`background-image:
-    linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
-    url(${shopImage})`}
->
-    <div class="hero-content">
-        <h1>Alarabiya Tyre</h1>
-
-        <p class="subtitle">
-            Professional Tire, Wheel & Suspension Services in Muscat, Oman
-        </p>
-
-        <div class="actions">
-            <a class="call-btn" href="tel:+96872006001">
-                Call Now
-            </a>
-
-            <a
-                class="whatsapp-btn"
-                href="https://wa.me/96872006001"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                WhatsApp
-            </a>
-        </div>
+<section class="hero hero-bg">
+  <div class="hero-content">
+    <h1>Alarabiya Tyre</h1>
+    <p class="subtitle">Professional Tire, Wheel & Suspension Services in Muscat, Oman</p>
+    <div class="actions">
+      <a class="call-btn" href="tel:+96872006001">Call Now</a>
+      <a class="whatsapp-btn" href="https://wa.me/96872006001" target="_blank" rel="noopener noreferrer">WhatsApp</a>
     </div>
+  </div>
 </section>
 
 <section class="workshop-services">
@@ -287,6 +268,12 @@
 		padding: 2rem;
 	}
 
+	.hero-bg {
+	background-image:
+		linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+		url('/src/lib/assets/alarabiya-shop-1.webp');
+	}
+
 	.hero-content {
 	    max-width: 700px;
 	}
@@ -389,9 +376,11 @@
 	} */
 
 	.call-btn {
-		background: #dc2626;
+		background: #b91c1c;
 
 		color: white;
+
+		box-shadow: 0 4px 14px rgba(185,28,28,.3);
 	}
 
 	.call-btn:hover {
@@ -403,9 +392,9 @@
 		color: inherit;
 	} */
 	 .whatsapp-btn {
-		background: white;
-
-		color: #111827;
+		background: #18181b;
+		color: white;
+		border: 1px solid #3f3f46;
 	}
 
 	.whatsapp-btn:hover {
@@ -444,19 +433,22 @@
 
 		border-radius: 20px;
 
-		box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+		box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+		border: 1px solid #e4e4e7;
 	}
 
 	.service-tag {
 		display: inline-block;
 
-		background: #fee2e2;
+		background: #fce7e7;
 
-		color: #dc2626;
+		color: #b91c1c;
 
 		padding: 0.4rem 0.8rem;
 
 		border-radius: 999px;
+
+		border: 1px solid #fca5a5;
 
 		font-size: 0.85rem;
 
@@ -644,9 +636,17 @@
 	}
 	@media (max-width: 768px) {
 		.hero {
-			min-height: 80vh;
+			min-height: 100vw;
+			background-color: #000;
+		}
 
-			background-position: center 15%;
+		.hero-bg {
+			background-image:
+			linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+			url('/src/lib/assets/alarabiya-shop-mobile.webp');
+			background-size: contain;
+			background-position: center center;
+			background-repeat: no-repeat;
 		}
 		
 		.service-row {
@@ -660,7 +660,10 @@
 		}
 
 		.service-image img {
-			height: 480px;
+			height: 260px;
+			object-fit: cover;
+			object-position: center center;
+			border-radius: 16px;
 		}
 
 		.service-content h2 {

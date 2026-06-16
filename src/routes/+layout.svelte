@@ -86,6 +86,10 @@
 </footer>
 
 <style>
+	:global(body) {
+		background-color: #fafafa;
+		margin: 0;
+	}
 	nav {
 		display: flex;
 		justify-content: space-between;
@@ -95,7 +99,8 @@
 
 		background: white;
 
-		border-bottom: 1px solid #ececec;
+		border-bottom: 1px solid #e4e4e7;
+		box-shadow: 0 1px 3px rgba(0,0,0,.05);
 	}
 
 	.navbar {
@@ -139,13 +144,13 @@
 
 	.links a {
 		text-decoration: none;
-		color: #374151;
+		color: #3f3f46;
 		font-weight: 500;
 		transition: color .2s ease;
 	}
 
 	.links a:hover {
-		color: #dc2626;
+		color: #b91c1c;
 	}
 
 	.nav-call {
@@ -176,7 +181,7 @@
 	footer {
 		margin-top: 5rem;
 
-		background: #111827;
+		background: #18181b;
 
 		color: white;
 
@@ -240,13 +245,12 @@
 
 	@media (max-width:768px) {
 
-		.navbar {
-			padding: 1rem;
-		}
+	.navbar {
+		padding: 1rem;
+	}
 
-		.links a:not(.nav-call) {
-			display: none;
-		}
+	.links a:not(.nav-call) {
+		display: none;
 	}
 
 	.footer-bottom {
@@ -258,4 +262,5 @@
     .footer-links {
         justify-content: center;
     }
+	}
 </style>
