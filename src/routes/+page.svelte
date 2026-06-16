@@ -11,17 +11,12 @@
 	import rims3 from '$lib/assets/alarabiya-rims-3.webp';
 	import tyre2 from '$lib/assets/alarabiya-tyre-2.webp';
 	import spacer1 from '$lib/assets/alarabiya-rims-spacer-1.webp';
-	import spacer2 from '$lib/assets/alarabiya-rims-spacer-2.webp';
 	import michelin from '$lib/assets/michelin.png';
 	import kumho from '$lib/assets/kumho.png';
 	import bridgestone from '$lib/assets/bridgestone.png';
 	import yokohama from '$lib/assets/yokohama.png';
 	import nexen from '$lib/assets/nexen.png';
 	import dunlop from '$lib/assets/dunlop.png';
-	import Wrench from 'lucide-svelte/icons/wrench';
-	import CircleGauge from 'lucide-svelte/icons/gauge';
-	import Disc3 from 'lucide-svelte/icons/disc-3';
-	import Car from 'lucide-svelte/icons/car';
 </script>
 
 <svelte:head>
@@ -146,32 +141,6 @@
 
 </section>
 
-<!-- <section class="services">
-	<h2>Our Services</h2>
-
-	<div class="service-list">
-		<div class="card">
-			<Wrench size={36} />
-			<h3>Tire Replacement</h3>
-		</div>
-
-		<div class="card">
-			<CircleGauge size={36} />
-			<h3>Wheel Balancing</h3>
-		</div>
-
-		<div class="card">
-			<Disc3 size={36} />
-			<h3>Rim Services</h3>
-		</div>
-
-		<div class="card">
-			<Car size={36} />
-			<h3>Vehicle Accessories</h3>
-		</div>
-	</div>
-</section> -->
-
 <section class="brands">
 
     <div class="section-header">
@@ -234,19 +203,6 @@
     </div>
 
 </section>
-
-<!-- <section class="business-info">
-	<h2>Business Information</h2>
-
-	<p><strong>Phone:</strong> +968 7200 6001</p>
-
-	<p><strong>Email:</strong> alarabiyatire@gmail.com</p>
-
-	<p>
-		<strong>Location:</strong>
-		Al Maabilah Industrial Area 1, Muscat, Oman
-	</p>
-</section> -->
 
 <style>
 	.hero {
@@ -313,39 +269,6 @@
 		border-radius: 8px;
 		text-decoration: none;
 		border: 1px solid #ccc;
-	}
-
-	.services {
-		margin-top: 3rem;
-	}
-
-	.service-list {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-		gap: 1rem;
-		margin-top: 1rem;
-	}
-
-	.card {
-		border: 1px solid #ddd;
-		border-radius: 12px;
-		padding: 1.5rem;
-		text-align: center;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 0.75rem;
-		transition: 0.2s ease;
-	}
-
-	.card:hover {
-		transform: translateY(-3px);
-	}
-
-	.business-info {
-		margin-top: 3rem;
-		padding-top: 2rem;
-		border-top: 1px solid #ddd;
 	}
 
 	.actions {
